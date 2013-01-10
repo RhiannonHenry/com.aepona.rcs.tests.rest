@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="propertyConfigurer" 
+  	class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    	<property name="location" value="/configuration.properties" />
+	</bean> 
+
+	<bean class="com.aepona.rcs.test.general.Register">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.general.Unregister">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="unregisterURL" value="${unregisterURL}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.general.Subscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.general.RetrieveIndividual">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.general.RetrieveList">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.general.Unsubscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.notificationChannel.Create">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.notificationChannel.Delete">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.notificationChannel.RetrieveIndividual">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.notificationChannel.RetrieveList">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.chat.Subscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="chatRequestDataAdhoc" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataConfirmed}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.chat.RetrieveIndividual">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="chatRequestDataAdhoc" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataConfirmed}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.chat.RetrieveList">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="chatRequestDataAdhoc" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataConfirmed}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+   	 
+   	 <bean class="com.aepona.rcs.test.chat.ConfirmedChat">
+   	 	<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="createIMChatSessionURL" value="${createIMChatSessionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataConfirmed}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="chatSessionIMStatusURL" value="${chatSessionIMStatusURL}" />
+   	 	<property name="chatSessionIMURL" value="${chatSessionIMURL}" />
+		<property name="sendIMURL" value="${sendIMURL}" />
+   	 </bean>
+	
+	<bean class="com.aepona.rcs.test.chat.ComposingChat">
+   	 	<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="createIMChatSessionURL" value="${createIMChatSessionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataConfirmed}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="chatSessionIMStatusURL" value="${chatSessionIMStatusURL}" />
+   	 	<property name="chatSessionIMURL" value="${chatSessionIMURL}" />
+		<property name="sendIMURL" value="${sendIMURL}" />
+   	 </bean>
+   	 
+   	 <bean class="com.aepona.rcs.test.chat.AdhocChat">
+   	 	<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="createIMChatSessionURL" value="${createIMChatSessionURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="chatRequestDataAdhoc" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="chatSessionIMStatusURL" value="${chatSessionIMStatusURL}" />
+   	 	<property name="chatSessionIMURL" value="${chatSessionIMURL}" />
+		<property name="sendIMURL" value="${sendIMURL}" />
+   	 </bean>
+	
+	<bean class="com.aepona.rcs.test.chat.GroupChat">
+   	 	<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="user4" value="${user4}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="contact3" value="${contact3}" />
+   	 	<property name="contact4" value="${contact4}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="chatRequestDataAdhoc" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="groupChatURL" value="${groupChatURL}" />
+   	 	<property name="groupChatSessionURL" value="${groupChatSessionURL}" />
+   	 	<property name="groupChatMessageURL" value="${groupChatMessageURL}" />
+   	 	<property name="groupChatParticipantsURL" value="${groupChatParticipantsURL}" />
+   	 	<property name="groupChatParticipantURL" value="${groupChatParticipantURL}" />
+   	 	<property name="groupChatParticipantStatusURL" value="${groupChatParticipantStatusURL}" />
+   	</bean>
+   	
+   	<bean class="com.aepona.rcs.test.chat.Unsubscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="chatRequestDataAdhoc" value="${chatRequestDataAdhoc}" />
+   	 	<property name="chatRequestDataConfirmed" value="${chatRequestDataConfirmed}" />
+   	 	<property name="chatSubscriptionURL" value="${chatSubscriptionURL}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.addressBook.Subscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.addressBook.UpdateSubscription">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="updateAddressBookRequestData" value="${updateAddressBookRequestData}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.addressBook.RetrieveIndividual">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="updateAddressBookRequestData" value="${updateAddressBookRequestData}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.addressBook.RetrieveList">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="updateAddressBookRequestData" value="${updateAddressBookRequestData}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.addressBook.Unsubscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="updateAddressBookRequestData" value="${updateAddressBookRequestData}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.addressBook.AddEditContact">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="user4" value="${user4}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contactURL" value="${contactURL}" />
+   	 	<property name="contactsURL" value="${contactsURL}" />
+   	 	<property name="attributesURL" value="${attributesURL}" />
+   	 	<property name="attributeURL" value="${attributeURL}" />
+   	 	<property name="addingContactRequestData" value="${addingContactRequestData}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="contact3" value="${contact3}" />
+   	 	<property name="contact4" value="${contact4}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="updateContactAttributeRequestData" value="${updateContactAttributeRequestData}" />
+   	 </bean>
+	
+	<bean class="com.aepona.rcs.test.capabilities.Capabilities">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="capabilitiesURL" value="${capabilitiesURL}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.fileTransfer.Subscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="fileTransferSubscriptionURL" value="${fileTransferSubscriptionURL}" />
+   	 	<property name="fileTransferRequestData" value="${fileTransferRequestData}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.fileTransfer.Unsubscribe">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="fileTransferSubscriptionURL" value="${fileTransferSubscriptionURL}" />
+   	 	<property name="fileTransferRequestData" value="${fileTransferRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.fileTransfer.RetrieveIndividual">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="fileTransferSubscriptionURL" value="${fileTransferSubscriptionURL}" />
+   	 	<property name="fileTransferRequestData" value="${fileTransferRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.fileTransfer.RetrieveList">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="fileTransferSubscriptionURL" value="${fileTransferSubscriptionURL}" />
+   	 	<property name="fileTransferRequestData" value="${fileTransferRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+	</bean>
+	
+	<bean class="com.aepona.rcs.test.fileTransfer.SendFile">
+		<property name="proxyURL" value="${proxyURL}" />
+		<property name="proxyPort" value="${proxyPort}" />
+   	 	<property name="baseURI" value="${baseURI}" />
+   	 	<property name="apiVersion" value="${apiVersion}" />
+   	 	<property name="port" value="${port}" />
+   	 	<property name="applicationPassword" value="${applicationPassword}" />
+   	 	<property name="user1" value="${user1}" />
+   	 	<property name="user2" value="${user2}" />
+   	 	<property name="user3" value="${user3}" />
+   	 	<property name="invalidUser" value="${invalidUser}" />
+   	 	<property name="contact1" value="${contact1}" />
+   	 	<property name="contact2" value="${contact2}" />
+   	 	<property name="invalidContact" value="${invalidContact}" />
+   	 	<property name="registerURL" value="${registerURL}" />
+   	 	<property name="notificationChannelURL" value="${notificationChannelURL}" />
+   	 	<property name="validLongPoll" value="${validLongPoll}" />
+   	 	<property name="addressBookRequestData" value="${addressBookRequestData}" />
+   	 	<property name="addressBookSubscriptionURL" value="${addressBookSubscriptionURL}" />
+   	 	<property name="sessionSubscriptionURL" value="${sessionSubscriptionURL}" />
+   	 	<property name="sessionRequestData" value="${sessionRequestData}" />
+   	 	<property name="fileTransferSubscriptionURL" value="${fileTransferSubscriptionURL}" />
+   	 	<property name="fileTransferRequestData" value="${fileTransferRequestData}" />
+   	 	<property name="urlSplit" value="${urlSplit}" />
+   	 	<property name="sendFileURL" value="${sendFileURL}" />
+   	 	<property name="fileTransferStatusURL" value="${fileTransferStatusURL}" />
+   	 	<property name="fileTransferSessionURL" value="${fileTransferSessionURL}" />
+	</bean>
+	
+</beans>
